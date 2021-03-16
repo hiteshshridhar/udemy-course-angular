@@ -1,7 +1,9 @@
-<form #formName = "ngForm">
-  <input type="text" name="email" id="1"> Email <br> <br>
-  <input type="text" name="Contact" id="2"> Contact <br> <br>
-  <input type="text" name="Username" id="3"> Username <br> <br>
+
+
+<form #formName = "ngForm" (ngSubmit) = "onSubmit(formName.value)">
+  <input type="text" name="email" id="1"ngModel > Email <br> <br>
+  <input type="text" name="Contact" id="2" ngModel> Contact <br> <br>
+  <input type="text" name="Username" id="3" ngModel> Username <br> <br>
 
   <button name="submit" type="submit">Submit</button>
 </form>
