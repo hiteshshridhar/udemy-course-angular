@@ -1,5 +1,5 @@
 
-
+<!---
 <form #formName = "ngForm" (ngSubmit) = "onSubmit(formName.value)">
   <input type="text" name="email" id="1"ngModel > Email <br> <br>
   <input type="text" name="Contact" id="2" ngModel> Contact <br> <br>
@@ -7,3 +7,62 @@
 
   <button name="submit" type="submit">Submit</button>
 </form>
+-->
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <div class="container-fluid">
+
+      <div class="form-group">
+        <form #formname = "ngForm">
+          <label> <h1>Please fill out the form </h1></label>
+
+          <div class="form-group">
+          
+            <label for="Email" ngModel> Email </label>
+            <input type="email" class="form-control">
+          </div>
+
+          <div class="form-group">
+         
+            <label for="password" ngModel> Password </label>
+            <input type="password" class="form-control">  
+          
+          </div>
+          
+          <div class="form-group"> 
+           
+              <label for="tel" ngModel> Mobile Number </label>
+              <input type="password" class="form-control">  
+            
+          </div>
+
+          <div class="form-group">
+            <select class="custom-select" >
+              <option selected>Select any of the following</option>
+              <option *ngFor="let course for courses" >{{course}} </option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <input class="form-check-input" type="radio" name="timePreference" value="evening">  
+            <label class="form-check-label"> Evening (5-8) </label>
+          </div>
+
+          <div class="form-group">
+            <input class="form-check-input" type="radio" name="timePreference" value="morning">  
+            <label class="form-check-label"> Morning (8-11) </label>
+          </div>
+
+          <div class="form-group">
+            <button type="submit" class="btn-btn-info"> Submit</button>
+          </div>
+        </form> 
+      </div>
+
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    </div>
