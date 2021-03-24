@@ -22,10 +22,5 @@ export class AppComponent {
 }
 
 
-function private(private: any, toastr: any, ToastrService: any) {
-  throw new Error('Function not implemented.');
-}
-function toastr(private: (private: any, toastr: any, ToastrService: any) => void, toastr: any, ToastrService: any) {
-  throw new Error('Function not implemented.');
-}
+
 
